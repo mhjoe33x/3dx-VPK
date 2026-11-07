@@ -1,0 +1,15 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Backups and local game data (do not commit game assets)
+*.bak
+*.vpk
+*.wpk
