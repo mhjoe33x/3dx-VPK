@@ -165,6 +165,8 @@ The executable is built for Windows. Keep the Python scripts and supporting file
 ```text
 .
 ├── README.md
+├── LICENSE
+├── THIRD_PARTY_NOTICES.md
 ├── requirements.txt
 ├── run_vpk_tool.bat
 ├── run_vpk_tool.sh
@@ -183,6 +185,22 @@ The executable is built for Windows. Keep the Python scripts and supporting file
 - This repository does not include game files, car packs, textures, or other copyrighted game assets. Obtain and use those files from a source you are authorized to use.
 - Compatibility of edited files may depend on the game build and the target car pack. Verify changes in your own test environment before replacing files in a live installation.
 
+## Development and attribution
+
+This project was developed with AI-assisted programming. AI assistance was used to help design, write, and refine the tool; it does not change the licensing or ownership of third-party material used in the project.
+
+The VPK format and sticker data layout were researched using Re3DX+ project files. In particular, the one-colour sticker detection and plane-encoding logic in `vpk_tool.py`'s `encode()` function is adapted from `tools/stage/pack_vinyl.py` in the Re3DX+ project. The relevant author attribution and MIT license notice are included in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+## Disclaimer
+
+This is an independent, unofficial community tool. It is not affiliated with, endorsed by, or sponsored by Bandai Namco Entertainment or the developers/publishers of Re3DX+.
+
+Re3DX+, WANGAN MIDNIGHT MAXIMUM TUNE 3DX+, and any associated names, trademarks, game code, artwork, vehicles, music, sounds, and other game content belong to their respective rights holders. This project does not claim ownership of those materials. The tool's license does not grant permission to use or redistribute game content.
+
+**You must provide your own game files.** This repository does not include or provide downloads for `.vpk`, `.wpk`, or other game files or assets. Only use files you are authorized to access, and do not upload game files or extracted assets to this repository, issue tracker, or pull requests.
+
 ## License
 
-No license is currently included. Until a license is added by the project owner, do not assume that the code is licensed for reuse, redistribution, or modification by others.
+The original code contributed specifically to this VPK Tool project is licensed under the MIT License; see [`LICENSE`](LICENSE). Portions adapted from other projects retain their original copyright and license terms. See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the Re3DX+ attribution and MIT notice.
+
+Before publishing, replace the `[YOUR NAME OR GITHUB USERNAME]` placeholder in `LICENSE` with the name or GitHub username you want to use as the copyright holder for your original contributions.
