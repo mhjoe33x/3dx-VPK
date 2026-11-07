@@ -92,6 +92,8 @@ def prepare(im, flip=True, fit="stretch"):
     return p
 
 
+# Adapted from Re3DX+ tools/stage/pack_vinyl.py (MIT; Allannn-sudo).
+# See THIRD_PARTY_NOTICES.md for the upstream copyright and license notice.
 def encode(p):
     """premultiplied RGBA float -> (kind, (r, g, b), plane bytes): a one-colour design keeps its alpha alone."""
     al = p[..., 3]
